@@ -1,0 +1,12 @@
+.highlighter {
+	background: rgba(0, 153, 204, 0.5);
+	position: absolute;
+	z-index: 1000000;
+	pointer-events: none;
+}
+.highlighter_box {
+	background: rgba(0, 153, 204, 0.5);
+	position: absolute;
+	z-index: 1000000;
+	pointer-events: none;
+}

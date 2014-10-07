@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+
+	"name": "Readtime",
+	"description": "Extension to terminate average reading time of article",
+	"version": "0.1",
+
+	"permissions": [
+		"activeTab", "tabs", "http://*/*", "https://*/*"
+	],
+	"browser_action": {
+		"default_icon": "readtime.png"
+	},
+	"background": {
+		"persistant": true,
+		"scripts": ["popup.js"]
+	},
+	"content_scripts": [{
+		"matches": ["http://*/*", "https://*/*"],
+		"js": ["jquery-2.1.1.min.js", "readtime.js"],
+		"css": ["highlighter.css"]
+	}]
+}
